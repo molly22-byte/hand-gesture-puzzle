@@ -1,6 +1,8 @@
-# 🤏 Hand Gesture Puzzle Game
+#  Hand Gesture Puzzle
 
-🚀 A real-time computer vision system that enables users to interact with a dynamic puzzle environment using intuitive hand gestures. By replacing traditional input methods like mouse and touch, the application transforms live camera input into an interactive game, allowing users to capture, generate, and solve puzzles seamlessly through natural hand movements.
+A real-time computer vision-based interactive puzzle game where users create and solve image puzzles using **hand gestures instead of a mouse or touch input**.
+
+Built using **OpenCV** and **MediaPipe**, this project tracks hand movements in real-time and enables a fully gesture-controlled experience.
 
 ---
 
@@ -12,35 +14,27 @@
 
 ## ✨ Features
 
-* 🧠 Real-time hand tracking using **MediaPipe**
-* 🤏 Pinch gesture to **pick & move tiles**
-* ✌️ Two-hand gesture to **select frame**
-* 🧩 Live camera frame converted into a **3x3 puzzle**
-* 🎮 Gesture-based drag & drop interaction
-* ⏱️ Timer to track solving performance
-* 🎨 Smooth UI with pointer tracking & motion trail
+* 🖐️ Real-time hand tracking using MediaPipe
+* ✌️ Two-hand frame selection (set your puzzle area)
+* 🤏 Pinch gesture to capture image
+* 🧩 Automatic puzzle generation (3x3 grid)
+* 🎯 Drag-and-drop puzzle solving using gestures
+* 🧠 Smooth pointer tracking
+* ⏱️ Timer-based gameplay
+* 🔀 Shuffle animation before solving
+* 🎮 Fully interactive without keyboard/mouse
 
 ---
 
-## 🧠 System Pipeline
+## 🛠 Tech Stack
 
-text
-Camera → Hand Detection → Gesture Recognition → Puzzle Logic → Rendering
-
----
-
-## ⚙️ Tech Stack
-
-| Technology | Purpose                    |
-| ---------- | -------------------------- |
-| OpenCV     | Camera capture & rendering |
-| MediaPipe  | Hand tracking & landmarks  |
-| NumPy      | Image processing           |
-| Python     | Core logic                 |
+* **Python**
+* **OpenCV** – for video processing & rendering
+* **MediaPipe** – for hand tracking & gesture detection
 
 ---
 
-## ▶️ Run Locally
+## ⚙️ How to Run
 
 ```bash
 git clone https://github.com/molly22-byte/hand-gesture-puzzle.git
@@ -51,28 +45,23 @@ python main.py
 
 ---
 
-## 🎮 Controls
+## 🧠 How It Works
 
-* ✌️ Two index fingers → Select frame
-* 🤏 Pinch → Pick tile
-* Release → Drop tile
-* Move hand → Drag tile
-
----
-
-## 📌 Requirements
-
-* Webcam
-* Good lighting conditions
-* Python 3.8+
+1. Camera captures live video using OpenCV
+2. MediaPipe detects hand landmarks in real-time
+3. User selects a frame using both hands
+4. Pinch gesture captures the selected frame
+5. Image is split into puzzle tiles
+6. User solves puzzle by dragging tiles using pinch gestures
 
 ---
 
 ## 🚀 Future Improvements
 
-* 🌐 Web-based version
-* 🎵 Sound feedback
-* 🎨 Enhanced UI/UX
-* 🧠 Advanced gesture recognition
+* 🎮 Difficulty levels (4x4, 5x5 puzzles)
+* 🌐 Web-based version (no install required)
+* 👥 Multiplayer / competition mode
+* 📱 Mobile compatibility
+* 🧠 AI-based gesture improvements
 
-
+---
