@@ -6,7 +6,7 @@
 
 ## 🎬 Demo
 
-![Demo](demo.gif)
+![Demo](puzzle demo.mp4)
 
 ---
 
